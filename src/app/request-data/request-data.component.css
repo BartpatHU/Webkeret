@@ -1,0 +1,12 @@
+
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+
+.gender, .name, .age{
+  margin: 50px;
+}
+
+.mat-list-item{
+  height: 200px;
+}

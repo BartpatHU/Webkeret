@@ -1,0 +1,53 @@
+
+
+<form class="example-form">
+  <br>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Birth Date</mat-label>
+    <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="birthDate" matInput placeholder="Ex. 1970-06-06">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Age</mat-label>
+    <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="age" matInput placeholder="Ex. 22">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Country of Birth</mat-label>
+    <input [ngModelOptions]="{standalone: true}" [(ngModel)]="country" matInput placeholder="Ex. Szeged">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Familiy Name</mat-label>
+    <input [ngModelOptions]="{standalone: true}" [(ngModel)]="familyName" matInput placeholder="Ex. Bartus">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Given Name</mat-label>
+    <input [ngModelOptions]="{standalone: true}" [(ngModel)]="givenName" matInput placeholder="Ex. Patrik" >
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Gender</mat-label>
+    <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="gender" matInput placeholder="Ex. Male">
+  </mat-form-field>
+  <br>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Nationality</mat-label>
+    <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="nationality" matInput placeholder="Ex. Hungarian">
+  </mat-form-field>
+  <br>
+  <br>
+
+  <button mat-raised-button (click)="saveData()" color="primary">Save</button>
+
+</form>
+
+

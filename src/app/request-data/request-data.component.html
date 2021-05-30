@@ -1,0 +1,55 @@
+
+<mat-list>
+
+  <mat-list-item>
+    <form class="gender">
+      <mat-radio-group aria-label="Select Gender">
+        <mat-label>Select gender!</mat-label><br><br>
+        <mat-radio-button color="primary" value="male">Male</mat-radio-button>
+        <mat-radio-button color="primary" value="female">Female</mat-radio-button>
+      </mat-radio-group>
+      <br><br>
+      <button mat-raised-button color="primary" (click)="readDataByGender()" routerLink="/list-data">
+        Get Data
+      </button>
+    </form>
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <mat-list-item>
+    <form class="name">
+      <mat-label>Select name!</mat-label><br>
+      <mat-form-field class="example-full-width">
+        <mat-label>Search by given name!</mat-label>
+        <input  [ngModelOptions]="{standalone: true}" [(ngModel)]="name" matInput placeholder="Ex. Patrik">
+      </mat-form-field>
+      <br><br>
+      <button mat-raised-button color="primary" (click)="readDataByName()" routerLink="/list-data">
+        Get Data
+      </button>
+    </form>
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <mat-list-item>
+    <form class="age">
+    <mat-label>Get data ordered by age!</mat-label><br><br>
+    <section class="example-section">
+      <mat-checkbox class="example-margin" [ngModelOptions]="{standalone: true}" [(ngModel)]="checked">Checked</mat-checkbox>
+    </section>
+    <br>
+    <button mat-raised-button color="primary" (click)="readDataByAge()" routerLink="/list-data">
+      Get Data
+    </button>
+  </form>
+</mat-list-item>
+
+</mat-list>
+
+
+
+
+
+
