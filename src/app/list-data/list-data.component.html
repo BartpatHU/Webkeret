@@ -1,1 +1,29 @@
-<p>list-data works!</p>
+
+<button class="button" mat-raised-button (click)="readData()" color="primary">Get Data</button>
+
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th>Birth Date</th>
+        <th>Country</th>
+        <th>Family Name</th>
+        <th>Given Name</th>
+        <th>Gender</th>
+        <th>Nationality</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td>{{item.birthDate}}</td>
+        <td>{{item.countryOfBirth}}</td>
+        <td>{{item.familyName}}</td>
+        <td>{{item.givenName}}</td>
+        <td>{{item.gender}}</td>
+        <td>{{item.nationality}}</td>
+        <td>{{item.age}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

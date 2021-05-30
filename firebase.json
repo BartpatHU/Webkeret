@@ -1,5 +1,17 @@
 {
   "remoteconfig": {
     "template": "remoteconfig.template.json"
-  }
+  },
+  "hosting": {
+    "public": "dist/BEADANDO",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "rewrites": [ {
+    "source": "**",
+    "destination": "/index.html"
+  } ]
 }

@@ -1,0 +1,8 @@
+td,tr,th{
+  padding: 20px;
+}
+
+.button{
+  width: 150px;
+  margin: 30px;
+}
